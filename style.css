@@ -1,0 +1,154 @@
+:root {
+  --primary-color: hsl(244, 49%, 27%);
+  --secondary-color: #2c3e50;
+  --accent-color: #e74c3c;
+  --background-color: #ecf0f1;
+  --text-color: #2c3e50;
+}
+
+body {
+  font-family: "ArialS", sans-serif;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  margin: 0;
+  padding: 0;
+}
+
+/* Color the Header from H1 to H3 with color: var or we can use the other way to apply color but this is the best way to apply color to all the headers in one line of code */
+
+h2,
+h3 {
+  color: var(--primary-color);
+  margin-bottom: 0.1px;
+}
+
+p {
+  margin-top: 1px;
+}
+
+ul,
+li {
+  margin-bottom: 1px;
+  margin-top: 1px;
+}
+.profile {
+  display: grid;
+  background-color: rgb(223, 129, 129);
+  width: 210mm; /* Standard A4 width */
+  min-height: 300mm; /* Standard A4 height */
+  margin: 10mm auto; /* Center the profile on the page with some margin */
+  padding: 10mm; /* Add padding around the content */
+  box-sizing: border-box; /* Ensures padding doesn't increase width */
+  border: #2c3e50 solid 5px;
+}
+/* OT TORN YUL PI NIS */
+.profile-header {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.header-text {
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+}
+
+.profile-header .h1 {
+  margin: 0;
+  text-align: left;
+  line-height: 1px;
+}
+
+.profile-header .subtitle {
+  margin: 0;
+  color: var(--secondary-color);
+  font-size: 25px;
+  line-height: 10px;
+}
+/* MK DOL NIS OT TORN YUL TE */
+
+
+/*To put text in the box just do as below*/
+.Pinfo {
+  /* This is for the width of the box and we can also use the other way to set the width but this is the best way to set the width of the box */
+  width: auto;
+  /* Same goes for height, note that we can also manually type values of pixel to set the height */
+  height: 145px;
+  /* To change the font size */
+  font-size: 16px;
+  /* This is the change the margin of the box and if we dont use the -top -left it will do the top right left bottom in a clockwise direction */
+  margin: 10px 1px 10px 1px;
+  /* To put the border around the box and it can be customized */
+  border: 1px solid lightslategray;
+  /* To change the background color */
+  background-color: rgb(201, 201, 201);
+  /* To change the line height */
+  line-height: 1.5;
+}
+
+.PFPIC {
+  width: 130px;         /* Adjusted size for a CV profile pic by pixel */
+  height: 150px;
+  overflow: hidden;     /* Hides any overflow if the image is larger than the container */
+  border-radius: 10px;  /* Small rounded corners for the image frame */
+  border-radius: 10%;   /* This part we can use the percentage as well. Also note that using the same function that override the other one is not really an ideal thing to do*/
+}
+
+.PFPIC img {
+  display: block; /* From my understanding it making the image act like a block of a shape and you can adjust it easily than trying to adjust the picture. In summary turn picture into a block */
+  width: 100%;        /* Adjusted size but as a whole smth? like it not pixel but to show idk how to explain it like you have 100pixel img but then you decidde to make it show only 1/10 of the image so it getting small in width or height but the pixel is shown only 10% and not what given. similiar like you have 10 apple but only put 1 apple for sell  */
+  height: 100%;
+  object-fit: cover; /* Ensures the image covers the frame without distortion */
+  object-position: center; /* Adjust focus to show the face area */
+
+}
+
+.h1 {
+  margin: 0;
+  color: rgb(0, 0, 0); /* Or whatever color you used in your edit */
+  font-size: 25px;
+  text-transform: capitalize;
+  text-align: left;
+}
+
+.Education {
+  width: auto;
+  height: auto;
+  font-size: 16px;
+  margin-bottom: 20px;
+  border: 1px solid lightslategray;
+  background-color: rgb(201, 201, 201);
+  line-height: 1.5;
+}
+
+.skill {
+  width: auto;
+  height: auto;
+  font-size: 16px;
+  margin-bottom: 20px;
+  border: 1px solid lightslategray;
+  background-color: rgb(201, 201, 201);
+  line-height: 1.5;
+}
+
+.Experience {
+  width: auto;
+  height: auto;
+  font-size: 16px;
+  margin-bottom: 20px;
+  border: 1px solid lightslategray;
+  background-color: rgb(201, 201, 201);
+  line-height: 1.5;
+}
+
+.SLWWA21 {
+  width: auto;
+  height: auto;
+  font-size: 16px;
+  margin-bottom: 20px;
+  border: 1px solid lightslategray;
+  background-color: rgb(201, 201, 201);
+  line-height: 1.5;
+}
